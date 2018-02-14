@@ -105,19 +105,30 @@
 
 .thead-inverse {
   th {
+<<<<<<< HEAD
     color: $table-inverse-color;
     background-color: $table-inverse-bg;
+=======
+    color: #fff;
+    background-color: $foreground-900;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
   }
 }
 
 .thead-default {
   th {
+<<<<<<< HEAD
     color: $table-head-color;
     background-color: $table-head-bg;
+=======
+    color: $foreground-600;
+    background-color: $foreground-200;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
   }
 }
 
 .table-inverse {
+<<<<<<< HEAD
   color: $table-inverse-color;
   background-color: $table-inverse-bg;
 
@@ -126,12 +137,17 @@
   thead th {
     border-color: $body-bg;
   }
+=======
+  color: $foreground-200;
+  background-color: $foreground-900;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
 
   &.table-bordered {
     border: 0;
   }
 }
 
+<<<<<<< HEAD
 
 
 // Responsive tables
@@ -149,6 +165,12 @@
   // Prevent double border on horizontal scroll due to use of `display: block;`
   &.table-bordered {
     border: 0;
+=======
+  th,
+  td,
+  thead th {
+    border-color: $foreground-600;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
   }
 }
 

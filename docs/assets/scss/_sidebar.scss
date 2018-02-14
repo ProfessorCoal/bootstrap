@@ -67,10 +67,15 @@
 
 .bd-toc-link {
   display: block;
+<<<<<<< HEAD
   padding-top: .25rem;
   padding-bottom: .25rem;
   // padding: .25rem .75rem;
   color: $gray;
+=======
+  padding: .25rem .75rem;
+  color: $foreground-600;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
 }
 .bd-toc-link:hover,
 .bd-toc-link:focus {
@@ -79,7 +84,7 @@
 }
 .active > .bd-toc-link {
   font-weight: 500;
-  color: $gray-dark;
+  color: $foreground-900;
 }
 .active > .bd-sidenav {
   display: block;
@@ -115,6 +120,6 @@
 .bd-sidebar .nav > .active:hover > a,
 .bd-sidebar .nav > .active:focus > a {
   font-weight: 500;
-  color: $gray-dark;
+  color: $foreground-900;
   background-color: transparent;
 }

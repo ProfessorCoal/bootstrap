@@ -34,6 +34,7 @@
 
 // Contextual colors
 
+<<<<<<< HEAD
 .text-white {
   color: #fff !important;
 }
@@ -45,10 +46,30 @@
 @include text-emphasis-variant('.text-success', $brand-success);
 
 @include text-emphasis-variant('.text-info', $brand-info);
+=======
+.text-muted {
+  color: $text-muted;
+}
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
 
-@include text-emphasis-variant('.text-warning', $brand-warning);
+// scss-lint:disable ImportantRule
+@each $color, $value in $theme-colors {
+  @if $color == "foreground" or $color == "background" {
+    // do nothing
+  } @else {
+    .text-#{$color} {
+      color: $value !important;
+    }
 
-@include text-emphasis-variant('.text-danger', $brand-danger);
+    a.text-#{$color} {
+      @include hover-focus {
+        color: darken($value, 10%) !important;
+      }
+    }
+  }
+}
+// scss-lint:enable ImportantRule
+
 
 // Font color
 

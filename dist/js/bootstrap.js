@@ -2035,6 +2035,7 @@ var Modal = function ($) {
       if (this._isBodyOverflowing && !isModalOverflowing) {
         this._element.style.paddingRight = this._scrollbarWidth + 'px';
       }
+<<<<<<< HEAD
     };
 
     Modal.prototype._resetAdjustments = function _resetAdjustments() {
@@ -2054,6 +2055,13 @@ var Modal = function ($) {
 
       if (this._isBodyOverflowing) {
         document.body.style.paddingRight = bodyPadding + this._scrollbarWidth + 'px';
+=======
+    }, {
+      key: '_checkScrollbar',
+      value: function _checkScrollbar() {
+        this._isBodyOverflowing = document.body.clientWidth < window.innerWidth;
+        this._scrollbarWidth = this._getScrollbarWidth();
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
       }
     };
 

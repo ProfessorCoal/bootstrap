@@ -5,13 +5,21 @@
   line-height: 1;
   color: $close-color;
   text-shadow: $close-text-shadow;
+<<<<<<< HEAD
   opacity: .5;
+=======
+  opacity: .42;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
 
   @include hover-focus {
     color: $close-color;
     text-decoration: none;
     cursor: pointer;
+<<<<<<< HEAD
     opacity: .75;
+=======
+    opacity: .65;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
   }
 }
 

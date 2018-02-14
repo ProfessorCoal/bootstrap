@@ -2,12 +2,33 @@
 // Contextual backgrounds
 //
 
+<<<<<<< HEAD
 .bg-faded {
   background-color: darken($body-bg, 3%);
+=======
+// Inverse
+// TODO: redo this as a proper class
+.bg-inverse {
+  color: $foreground-200;
+  background-color: $foreground-900;
 }
 
-@include bg-variant('.bg-primary', $brand-primary);
+.bg-faded {
+  background-color: $foreground-100;
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
+}
 
+// scss-lint:disable ImportantRule
+@each $color, $value in $theme-colors {
+  @if $color == "foreground" or $color == "background" {
+    // do nothing
+  } @else {
+    .bg-#{$color} {
+      color: #fff;
+      background-color: $value !important;
+    }
+
+<<<<<<< HEAD
 @include bg-variant('.bg-success', $brand-success);
 
 @include bg-variant('.bg-info', $brand-info);
@@ -17,3 +38,13 @@
 @include bg-variant('.bg-danger', $brand-danger);
 
 @include bg-variant('.bg-inverse', $brand-inverse);
+=======
+    a.bg-#{$color} {
+      @include hover-focus {
+        background-color: darken($value, 10%) !important;
+      }
+    }
+  }
+}
+// scss-lint:enable ImportantRule
+>>>>>>> 153630e06119bd0eba602920f6a2254be243dbd5
